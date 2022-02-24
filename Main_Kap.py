@@ -9,7 +9,6 @@ import string
 import random
 import Page_Kap
 
-
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
@@ -25,7 +24,7 @@ class PythonOrgSearch(unittest.TestCase):
         assert search_result_page.is_results_found()
 
 
-        
+
 
     #def test_ValidUsername(self):
         #mainPage2 = page.MainPage(self.driver)
