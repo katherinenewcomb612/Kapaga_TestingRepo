@@ -14,7 +14,7 @@ class MainPage(BasePage):
     search_text_element = SearchTextElement()
 
     def is_title_matches(self):
-        return "Login" in self.driver.title
+        return "Kapaga" in self.driver.title
 
     def click_go_button(self):
         element = self.driver.find_element(*MainPageLocators.GO_BUTTON)

@@ -23,9 +23,6 @@ class PythonOrgSearch(unittest.TestCase):
         search_result_page = Page_Kap.SearchResultsPage(self.driver)
         assert search_result_page.is_results_found()
 
-
-
-
     #def test_ValidUsername(self):
         #mainPage2 = page.MainPage(self.driver)
         #assert mainPage2.ValidUsername()
