@@ -19,9 +19,11 @@ class PythonOrgSearch(unittest.TestCase):
         mainPage = Page_Kap.MainPage(self.driver)
         assert mainPage.is_title_matches()
         mainPage.search_text_element = "E-mail"
+        time.sleep(10)
         mainPage.click_go_button()
         search_result_page = Page_Kap.SearchResultsPage(self.driver)
         assert search_result_page.is_results_found()
+
 
     #def test_ValidUsername(self):
         #mainPage2 = page.MainPage(self.driver)
