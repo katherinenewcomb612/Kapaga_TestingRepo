@@ -5,8 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import string
-import random
 import Page_Kap
 
 class PythonOrgSearch(unittest.TestCase):
@@ -18,7 +16,7 @@ class PythonOrgSearch(unittest.TestCase):
     def test_search_python(self):
         mainPage = Page_Kap.MainPage(self.driver)
         assert mainPage.is_title_matches()
-        mainPage.search_text_element = "E-mail"
+        mainPage.search_text_element = "Kapaga"
         time.sleep(10)
         mainPage.click_go_button()
         search_result_page = Page_Kap.SearchResultsPage(self.driver)
